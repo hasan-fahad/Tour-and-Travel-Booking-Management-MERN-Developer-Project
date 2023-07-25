@@ -8,6 +8,8 @@ import Subtitle from '../../Shared/Subtitle';
 import SearchBar from '../../Shared/SearchBar';
 import ServiceList from '../../Service/ServiceList';
 import FeaturedTourList from '../FeaturedTourList/FeaturedTourList';
+import experienceImg from '../../assets/images/experience.png'
+
 const Home = () => {
     return (
       <>
@@ -87,6 +89,67 @@ const Home = () => {
 
           {/* Featured tour section end */}
 
+          {/* Experience section start */}
+
+        <section>
+          <Container>
+            <Row>
+              <Col lg="6">
+              <div className="experience__content">
+                <Subtitle subtitle={"Experience"}></Subtitle>
+                <h2>
+                  With our all experience <br />we will serve you
+                </h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                <br />
+                Inventore necessitatibus vel temporibus laborum ipsa ipsam. 
+              </p>
+              </div>
+
+              <div className="counter__wrapper d-flex align-items-center gap-5">
+                <div className="counter__box">
+                  <span>12k+</span>
+                  <h6>Successfull trip</h6>
+                </div>
+                <div className="counter__box">
+                  <span>2k+</span>
+                  <h6>Regular clients</h6>
+                </div>
+                <div className="counter__box">
+                  <span>2+</span>
+                  <h6>Years Experience</h6>
+                </div>
+              </div>
+              
+              </Col>
+              <Col lg="6">
+                <div className="experience__img">
+                  <img src={experienceImg} alt="" />
+                </div>
+              </Col>
+            </Row>
+          </Container>
+        </section>
+
+{/* Experience section end */}
+
+{/* Gallery section start */}
+<section>
+  <Container>
+    <Row>
+      <Col lg="12">
+        <Subtitle subtitle={"Gallery"}></Subtitle>
+        <h2 className="gallery__title">
+          Visit our customers tour gallery
+        </h2>
+      </Col>
+    </Row>
+  </Container>
+</section>
+
+
+{/* Gallery section start */}
       </>
     );
 }; 
