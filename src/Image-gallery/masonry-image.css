@@ -1,0 +1,7 @@
+.masonry__img{
+    transition: .3s;
+}
+
+.masonry__img:hover{
+    transform: scale(1.1);
+}

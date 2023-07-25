@@ -9,6 +9,8 @@ import SearchBar from '../../Shared/SearchBar';
 import ServiceList from '../../Service/ServiceList';
 import FeaturedTourList from '../FeaturedTourList/FeaturedTourList';
 import experienceImg from '../../assets/images/experience.png'
+import MasonryImageGallery from '../../Image-gallery/MasonryImageGallery';
+import Testimonials from '../Testimonials/Testimonials';
 
 const Home = () => {
     return (
@@ -143,13 +145,39 @@ const Home = () => {
         <h2 className="gallery__title">
           Visit our customers tour gallery
         </h2>
+        
+      </Col>
+      <Col lg="12">
+      <MasonryImageGallery></MasonryImageGallery>
       </Col>
     </Row>
   </Container>
 </section>
 
 
-{/* Gallery section start */}
+{/* Gallery section end */}
+
+{/* Testimonial start */}
+
+<section>
+  <Container>
+    <Row>
+      <Col lg="12">
+        <Subtitle subtitle={"Fans Love"}>
+
+        </Subtitle>
+        <h2 className="testimonial__title">
+          What our fans say about us
+        </h2>
+        <Testimonials></Testimonials>
+      </Col>
+      
+    </Row>
+  </Container>
+</section>
+
+{/* Testimonial end */}
+
       </>
     );
 }; 
