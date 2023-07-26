@@ -11,6 +11,7 @@ import FeaturedTourList from '../FeaturedTourList/FeaturedTourList';
 import experienceImg from '../../assets/images/experience.png'
 import MasonryImageGallery from '../../Image-gallery/MasonryImageGallery';
 import Testimonials from '../Testimonials/Testimonials';
+import Newsletter from '../../Shared/Newsletter';
 
 const Home = () => {
     return (
@@ -180,7 +181,13 @@ const Home = () => {
 </section>
 
 {/* Testimonial end */}
+{/* Newsletter start */}
+<section>
+  
+<Newsletter></Newsletter>
 
+</section>
+{/* Newsletter end */}
       </>
     );
 }; 
