@@ -12,12 +12,17 @@ import experienceImg from '../../assets/images/experience.png'
 import MasonryImageGallery from '../../Image-gallery/MasonryImageGallery';
 import Testimonials from '../Testimonials/Testimonials';
 import Newsletter from '../../Shared/Newsletter';
+import { Helmet } from 'react-helmet';
 
 const Home = () => {
     return (
       <>
       <section>
         {/* hero section start */}
+
+        <Helmet>
+          <title>Travel world | Home</title>
+        </Helmet>
 
       <Container>
         <Row>

@@ -5,6 +5,7 @@ import { NavLink, Link } from 'react-router-dom';
 
  import './Header.css'
 import { FaBars } from "react-icons/fa";
+import { useEffect, useRef } from 'react';
 
 const nav__links=[
     {
@@ -24,7 +25,25 @@ const nav__links=[
 
 
 const Header = () => {
-    return <header className="sticky__header">
+
+    const headerRef = useRef(null);
+
+    const stickyHeaderFunc=()=>{
+        window.addEventListener("scroll", ()=>{
+            if(document.body.scrollTop>80 || document.documentElement.scrollTop>80){
+                headerRef.current.classList.add("sticky__header");
+            } 
+            else{
+                headerRef.current.classList.remove("sticky__header");
+            }
+        })
+    }
+
+    useEffect(()=>{
+        stickyHeaderFunc();
+        return window.removeEventListener("scroll",stickyHeaderFunc);
+    })
+    return <header className="sticky__header" ref={headerRef}>
             <Container>
                 <Row>
                     <div className="nav__wrapper d-flex align-items-center justify-content-between">
