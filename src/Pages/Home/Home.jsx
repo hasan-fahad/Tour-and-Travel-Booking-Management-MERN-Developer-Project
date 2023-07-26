@@ -169,7 +169,10 @@ const Home = () => {
         <h2 className="testimonial__title">
           What our fans say about us
         </h2>
-        <Testimonials></Testimonials>
+        
+      </Col>
+      <Col lg="12">
+      <Testimonials></Testimonials>
       </Col>
       
     </Row>
